@@ -1,0 +1,61 @@
+--- 
+layout: blank 
+---
+<section class="content">
+    <h1>Daisy Garden</h1>
+    <div class="words">&nbsp</div>
+    <div class="btns">
+        <a href="{{site.baseurl}}/about/" class="btn btn-default">profile</a>
+        <a href="{{site.baseurl}}/blog/" class="btn btn-default">blogs</a>
+        <a href="{{site.baseurl}}/albums/" class="btn btn-default">albums</a>
+        <a href="{{site.baseurl}}/project/" class="btn btn-default">Skills</a>
+        <a href="{{site.baseurl}}/resume.html" class="btn btn-default">Resume</a>
+
+    </div>
+    <div class="link">
+        <p>@daisyHawen</p>
+        <a href="http://github.com/{{ site.github }}"><i class="fa fa-github"></i>Git</a>
+        <a href="https://www.zhihu.com/people/hawintion">@知乎</a>
+    </div>
+</section>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<style>
+.content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.words {
+    height: 100px;
+    line-height: 100px;
+}
+
+.link {
+    margin-top: 10px;
+}
+</style>
+<script>
+var s = '欢迎来到我的博客';
+var con = $('.words');
+var index = 0;
+var length = s.length;
+var tId = null;
+
+function start() {
+    con.text('');
+
+    tId = setInterval(function() {
+        con.append(s.charAt(index));
+        if (index++ === length) {
+            clearInterval(tId);
+            index = 0;
+            start()
+        }
+    }, 300);
+}
+
+start();
+</script>

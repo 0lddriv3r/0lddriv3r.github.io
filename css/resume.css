@@ -1,0 +1,99 @@
+.content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+.color-set{
+	display: none;
+}
+.content .icon-blue{
+	color: #2f79bb;
+}
+.content .icon-blue:hover{
+	color: blue;
+}
+
+.content .icon-red{
+	color: indianred;
+}
+.content .icon-red:hover{
+	color: red;
+}
+.content .icon-default{
+	color:#333;
+}
+.content .icon-default:hover{
+	color:rgb(100,100,100);
+}
+.content .icon-green{
+	color:seagreen;
+}
+.content .icon-green:hover{
+	color:green;
+}
+#job{
+	width:200px;
+	position: relative;
+	margin-left: 60%;
+	margin-top: -20px;
+	display: block;
+}
+.words {
+    height: 100px;
+    line-height: 100px;
+}
+
+.link {
+    margin-top: 10px;
+}
+.contact li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 10px;
+}
+h2{
+	text-align: left;
+	font-size: 20px;
+}
+h3{
+	text-align: left;
+	font-size: 16px;
+}
+
+.skill,.award,.project,.education,.other{
+	text-align: left;
+}
+.skill hr,.award hr,.project hr,.education hr,.other hr{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-top:1px solid #666;
+	/*border-top:1px solid #489FDF;*/
+
+}
+.education .year,.project .year,.skill .year{
+	display: inline-block;
+	position: relative;
+	float: right;
+}
+.year{
+	float: right;
+}
+.education .degree{
+	font-style: oblique;
+}
+.skill ul,.award ul,.project ul,.education ul,.other ul{
+	margin-left: 50px;
+}
+.skill li{
+	width: 49%;
+	display: inline-block;
+}
+.cv{
+	width:100px;
+	position: absolute;
+	float: right;
+	top:10px;
+	/*:0px;*/
+}
