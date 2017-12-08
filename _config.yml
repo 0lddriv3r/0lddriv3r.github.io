@@ -1,11 +1,11 @@
 # Site settings
-title: Daisy花园
-email: daisy_xinglove@163.com
+title: 卓教授 
+email: jiajie_zhuo@163.com
 baseurl: "" # the subpath of your site, e.g. /blog
 #url: "http://yourdomain.com" # the base hostname & protocol for your site
 
 # Sidebar settings
-description: 灵魂和身体都需要奔跑
+description: 与其感慨路难行，不如马上出发\nBetter to run than curse the road
 
 gems: [jekyll-paginate]
 
@@ -15,13 +15,13 @@ paginate_path: "blog/page:num"
 #pagin
 paginate: 5
 # Social icons
-facebook: daisyHawen
-linkedin: daisyHawen
-github: daisyHawen
+facebook: username
+linkedin: JiajieZhuo
+github: 0lddriv3r
 deviantart: username
 codepen: username
 
-footer: © DaisyHawen
+footer: © JiajieZhuo
 
 
 # Build settings
