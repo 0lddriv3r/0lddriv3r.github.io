@@ -94,6 +94,7 @@ h3{
 	width:100px;
 	/*position: absolute;*/
 	float: right;
-	top:10px;
+	bottom: 10px;
+	/*top:10px;*/
 	/*:0px;*/
 }
