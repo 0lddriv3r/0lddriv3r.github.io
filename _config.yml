@@ -5,7 +5,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 #url: "http://yourdomain.com" # the base hostname & protocol for your site
 
 # Sidebar settings
-description: 与其感慨路难行，不如马上出发\nBetter to run than curse the road
+description: Better to run than curse the road
 
 gems: [jekyll-paginate]
 
@@ -15,7 +15,7 @@ paginate_path: "blog/page:num"
 #pagin
 paginate: 5
 # Social icons
-facebook: username
+facebook: JiajieZhuo
 linkedin: JiajieZhuo
 github: 0lddriv3r
 deviantart: username
