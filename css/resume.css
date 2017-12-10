@@ -92,7 +92,7 @@ h3{
 }
 .cv{
 	width:100px;
-	/*position: absolute;*/
+	position: absolute;
 	float: right;
 	bottom: 10px;
 	/*top:10px;*/
