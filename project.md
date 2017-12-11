@@ -9,7 +9,7 @@ permalink: /project/
             <img src="{{ site.baseurl }}/img/scllogo.gif" alt="Picture">
         </div>
         <div class="cd-timeline-content">
-            <h2>2011-2015</h2>
+            <h2>2014-2015</h2>
             <p>The UESTC Computer Science <br>技能：C++、Python<br>基于C++实现的大规模数据爬取<br>基于Python实现的云平台用户统一认证系统 </p>
             <a href="#" class="cd-read-more" target="_blank">Learn more</a>
             <span class="cd-date">2013-01-06</span>
@@ -23,7 +23,7 @@ permalink: /project/
         <div class="cd-timeline-content">
             <h2>2014—2015</h2>
             <p>侧重于Web开发<br>仓库管理系统<br>技术点：html,css,jquery,bootstrap<br>核心技能</p>
-            <a href="#" class="cd-read-more" target="_blank">learn more</a>
+            <a href="#" class="cd-read-more" target="_blank">Learn more</a>
             <span class="cd-date">2015-12-25</span>
         </div>
     </div>
@@ -34,8 +34,8 @@ permalink: /project/
         </div>
         <div class="cd-timeline-content">
             <h2>2015-2016</h2>
-            <p>nodejs，新技术，新框架，向大前端靠近<br>技术点：electron、angular、reactjs</p>
-            <a href="#" class="cd-read-more" target="_blank">阅读全文</a>
+            <p>nodejs，大前端<br>技术点：electron、angular、reactjs</p>
+            <a href="#" class="cd-read-more" target="_blank">Learn more</a>
             <span class="cd-date">2016-12-20</span>
         </div>
     </div>
