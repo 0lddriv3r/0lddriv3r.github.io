@@ -9,8 +9,8 @@ categories: html5
 
 - sessionStorage
 - localStorage
-sessionStorage.setItem('key','value')
-变量=sessionStorage.getItem('key','value')
+  sessionStorage.setItem('key','value')
+  变量=sessionStorage.getItem('key','value')
 
 * * *
 

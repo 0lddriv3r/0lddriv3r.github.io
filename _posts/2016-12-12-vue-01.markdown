@@ -199,7 +199,7 @@ http://www.cnblogs.com/tugenhua0707/p/4793265.html#_labe9
 
 App.vue文件，没什么可说的，基本上照着官方API写就好了
 
-```
+```html
 <template>
   <div id="app">
     <div class="row">
