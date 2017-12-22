@@ -6,11 +6,14 @@ permalink: /about/
 
 我时常有一点恨，得到的，失去的，这些年。
 
-暂时不会搬运博客，原地址 [JiajieZhuo——CSDN](http://blog.csdn.net/jiajiezhuo) 看我的所有文章。
+---
+
+暂时不会搬运博客，原地址 [JiajieZhuo——CSDN](http://blog.csdn.net/jiajiezhuo) 看我的文章。
 
 ---
 
 想看？
+
 先找到漏洞再说！
 
 ---
