@@ -3,10 +3,10 @@ layout: post
 title:  "Vue使用指南（二）"
 date:   2016-10-13 22:02:01 -0500
 comments: true
-categories: vue javascript
+categories: vue
 ---
-经过一个国庆没有写代码，感觉突然就生疏了，于是先总结一下国庆节之前的工作，并介绍一下用到的Vue技术。
-这里讲一下，我是如何用Vue实现分页的。
+
+Vue实现分页的。
 
 **html部分——分页代码**
 
