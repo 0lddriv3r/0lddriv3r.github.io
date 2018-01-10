@@ -6,10 +6,10 @@ layout: blank
     <nav>
         <ul class="nav">
             <li class="active">all</li>
+            <li>2020</li>
+            <li>2029</li>
+            <li>2018</li>
             <li>2017</li>
-            <li>2016</li>
-            <li>2015</li>
-            <li>2014</li>
         </ul>
     </nav>
     <div class="img-container" id="img">
@@ -121,9 +121,10 @@ var img_url = [];
 
 var getImgs = function() {
     // var img_url = [];
-    // open image
-    var url = "https://api.flickr.com/services/rest/?method=flickr.people.getPublicPhotos&api_key=56a8221a406f0c4f150601ed15512173&user_id=146067095@N06&format=json";　
-    //var url = "https://www.google.com";　
+    // var user_id="146067095@N06&format=json";
+    
+    var url = "https://api.flickr.com/services/rest/?method=flickr.people.getPublicPhotos&api_key=56a8221a406f0c4f150601ed15512173&user_id=158693397@N08&format=json";
+
     $.ajax({
         type: "GET",
         url: url,
@@ -181,7 +182,7 @@ var getDates = function(imgs) {
     //查询每一张图片的时间
     $.each(imgs, function(i, img) {
         var url = "https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&api_key=56a8221a406f0c4f150601ed15512173&photo_id=" + img.id + "&format=json";
-        var url = "https://www.google.com";
+        
         $.ajax(url)
             .done(function() {
                 console.log(url + "done");
