@@ -6,7 +6,7 @@ permalink: /project/
 <section id="cd-timeline" class="cd-container">
     <div class="cd-timeline-block">
         <div class="cd-timeline-img cd-picture">
-            <img src="{{ site.baseurl }}/img/scllogo.gif" alt="Picture">
+            <img src="{{ site.baseurl }}/img/schoollogo.gif" alt="Picture">
         </div>
         <div class="cd-timeline-content">
             <h2>2014-2015</h2>
@@ -18,7 +18,7 @@ permalink: /project/
 
     <div class="cd-timeline-block">
         <div class="cd-timeline-img cd-movie">
-            <img src="{{ site.baseurl }}/img/scllogo.gif" alt="Movie">
+            <img src="{{ site.baseurl }}/img/schoollogo.gif" alt="Movie">
         </div>
         <div class="cd-timeline-content">
             <h2>2014—2015</h2>
@@ -30,7 +30,7 @@ permalink: /project/
 
     <div class="cd-timeline-block">
         <div class="cd-timeline-img cd-picture">
-            <img src="{{ site.baseurl }}/img/scllogo.gif" alt="Picture">
+            <img src="{{ site.baseurl }}/img/schoollogo.gif" alt="Picture">
         </div>
         <div class="cd-timeline-content">
             <h2>2015-2016</h2>
@@ -42,7 +42,7 @@ permalink: /project/
 
     <div class="cd-timeline-block">
         <div class="cd-timeline-img cd-movie">
-            <img src="{{ site.baseurl }}/img/scllogo.gif" alt="Picture">
+            <img src="{{ site.baseurl }}/img/schoollogo.gif" alt="Picture">
         </div>
         <div class="cd-timeline-content">
             <h2>2016-2017</h2>
