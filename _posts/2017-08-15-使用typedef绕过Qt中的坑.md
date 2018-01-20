@@ -2,7 +2,7 @@
 layout: post
 title: 使用typedef绕过Qt中的坑
 date: 2017-08-15 02:44:33
-tags:
+categories: Qt
 ---
 
 Qt的核心技术信号槽的灵活使用相信大家都非常熟悉了，这里主要总结一下在信号槽中不能随意使用的地方以及如何使用typedef绕过这些坑。

@@ -2,7 +2,7 @@
 layout: post
 title: MacOSX的tree命令
 date: 2017-10-02 10:16:56
-tags:
+categories: Mac
 ---
 
 Linux和Windows下的tree命令对于需要查看一个目录的文件树非常有用，但是MacOS X中居然没有（Windows中都有，居然MacOS X中没有，这怎么能忍），找到一条shell命令可以实现这个功能需求：

@@ -2,7 +2,7 @@
 layout: post
 title: if __name__ == '__main__'
 date: 2017-06-14 04:16:32
-tags:
+categories: Python
 ---
 
 在Python中，我们经常可以看到一个```if __name__ == '__main__'``` 的语句，或者说所有Python模块都有这段内置代码，```__name__``` 属性表示运行的Python文件的模块名称（文件名）。
