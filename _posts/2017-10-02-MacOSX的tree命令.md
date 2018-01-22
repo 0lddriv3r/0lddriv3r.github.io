@@ -8,12 +8,12 @@ categories: Mac
 
 Linux和Windows下的tree命令对于需要查看一个目录的文件树非常有用，但是MacOS X中居然没有（Windows中都有，居然MacOS X中没有，这怎么能忍），找到一条shell命令可以实现这个功能需求：
 
-```
+```shell
 find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'
 ```
 效果如下：
 
-```
+```shell
 ➜  ScrapyProject git:(master) ✗ find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'
 .
 |____.DS_Store
@@ -57,12 +57,12 @@ find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'
 ```
 每次这样使用也不方便，当然就想到了使用`alias`给命令设置别名：
 
-```
+```shell
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 ```
 **值得注意的是，需要在系统的.bashrc文件中添加该命令，这样才是全局有效并且永久生效（因为我用的是zsh，则在.zshrc文件中添加该命令）。**
 现在即可使用`tree`命令查看当前目录下的文件树结构了：
-```
+```shell
 ➜  ScrapyProject git:(master) ✗ tree
 .
 |____.DS_Store
