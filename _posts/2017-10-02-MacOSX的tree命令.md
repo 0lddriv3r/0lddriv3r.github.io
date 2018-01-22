@@ -2,6 +2,7 @@
 layout: post
 title: MacOSX的tree命令
 date: 2017-10-02 10:16:56
+comment: True
 categories: Mac
 ---
 

@@ -2,6 +2,7 @@
 layout: post
 title: if __name__ == '__main__'
 date: 2017-06-14 04:16:32
+comment: True
 categories: Python
 ---
 

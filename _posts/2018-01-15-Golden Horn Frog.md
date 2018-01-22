@@ -3,7 +3,7 @@ layout: post
 title:  金角蛙成长日记
 date:   2018-01-15 09:23:45 -0000
 comments: true
-categories: others
+categories: Others
 ---
 
 第一次正式养宠物，被郑教授带进了爬宠的坑，由此记录一下我和他共同成长的过程。

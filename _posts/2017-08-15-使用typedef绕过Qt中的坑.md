@@ -2,6 +2,7 @@
 layout: post
 title: 使用typedef绕过Qt中的坑
 date: 2017-08-15 02:44:33
+comment: True
 categories: Qt
 ---
 
