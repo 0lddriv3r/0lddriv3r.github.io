@@ -4,13 +4,21 @@ import os
 import time
 import fire
 
+
+def open_blog_with_sublime(file_name):
+    os.system('/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ' + file_name)
+
+
 def create_blog(blog_name, category):
-	date_time_str = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
-	date_str = date_time_str.split(' ')[0]
-	file_name = './' + date_str + '-' + blog_name + '.md'
-	with open(file_name, 'w') as f:
-		text = '''---\nlayout: post\ntitle:  {blog_name}\ndate:   {date_time}\ncomments: True\ncategories: {category}\n---\n\n'''.format(blog_name=blog_name, date_time=date_time_str, category=category)
-		f.write(text)
+    date_time_str = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+    date_str = date_time_str.split(' ')[0]
+    file_name = './' + date_str + '-' + blog_name + '.md'
+    with open(file_name, 'w') as f:
+        text = '''---\nlayout: post\ntitle:  {blog_name}\ndate:   {date_time}\ncomments: True\ncategories: {category}\n---\n\n'''.format(
+            blog_name=blog_name, date_time=date_time_str, category=category)
+        f.write(text)
+
+    open_blog_with_sublime(file_name)
 
 
 if __name__ == '__main__':
