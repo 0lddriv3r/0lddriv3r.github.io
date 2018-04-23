@@ -33,6 +33,18 @@
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
         })();
     </script>
+    <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+      <div>如果有收获，可以请我喝杯咖啡！</div>
+      <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+        <span>赏</span>
+      </button>
+      <div id="QR" style="display: none;">
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/img/wechat_pay.jpg" alt="WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      </div>
+    </div>
     <!-- 多说公共JS代码 end -->
     <!-- To enable Disqus comments, comment out this code and insert your Disqus shortname -->
     <!-- {% if page.comments %}
