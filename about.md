@@ -18,4 +18,11 @@ permalink: /about/
 
 ---
 
+以下为一些朋友：
+不羁放纵朱朱哥 [www.drifter.fun](https://www.drifter.fun/)
+
+网络安全小太爷 [xuanxuanblingbling.github.io](https://xuanxuanblingbling.github.io/)
+
+---
+
 **爱好** ：吉他、跑步、篮球、设计、数学
