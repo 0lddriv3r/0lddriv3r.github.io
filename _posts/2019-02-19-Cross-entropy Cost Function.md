@@ -34,13 +34,13 @@ $$ \frac{\partial C}{\partial b} = (a-y)\sigma'(z) $$
 ## 反推交叉熵代价函数
 要想达到与激活函数梯度无关的效果，可以通过反推的方法：
 
-$$ \frac{\partial C}{\partial b} = \frac{\partial C}{\partial a}·\frac{\partial a}{\partial z}·\frac{\partial z}{\partial b} = \frac{\partial C}{\partial a}·\sigma'(z)·\frac{\partial wx+b}{\partial b} = \frac{\partial C}{\partial a}·a(1-a) $$
+$$ \frac{\partial C}{\partial b} = \frac{\partial C}{\partial a}·\frac{\partial a}{\partial z}·\frac{\partial z}{\partial b} = \frac{\partial C}{\partial a}·\sigma'(z)·\frac{\partial (wx+b)}{\partial b} = \frac{\partial C}{\partial a}·a(1-a) $$
 
 由前面可知 $\frac{\partial C}{\partial b} = (a-y)\sigma'(z)$ ，为了使激活函数梯度不包含 $\sigma'(z)$，可令：
 
 $$ \frac{\partial a}{\partial z} = \sigma'(z) = 1 $$
 
-连立两式可得微分方程：
+联立两式可得微分方程：
 
 $$ \frac{\partial C}{\partial a}·a(1-a) = (a-y) $$
 
@@ -58,3 +58,6 @@ $$ C = -[ y\ln a + (1-y)\ln (1-a) ] + const $$
 $$ C = -\frac{1}{n} \sum_{x}{ [ y\ln a + (1-y)\ln (1-a) ] } $$
 
 由于形式非常像[交叉熵](https://zh.wikipedia.org/wiki/%E4%BA%A4%E5%8F%89%E7%86%B5)，故取名**交叉熵代价函数**。
+
+*更正：*
+如果要给他一个实际意义的话，那可能就是对预测值的一种度量：[用来衡量在给定的真实分布下，使用非真实分布所指定的策略消除系统的不确定性所需要付出的努力的大小](https://www.zhihu.com/question/41252833)
