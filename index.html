@@ -77,7 +77,7 @@
 
                     
                     
-                    <li><a class="fa fa-2x fa-reddit"><span class="description">Resume</span></a></li>
+                    <li><a class="fa fa-2x fa-reddit" onclick=resumeOnClick()><span class="description">Resume</span></a></li>
                     
 
                     
@@ -112,7 +112,7 @@
     </body>
 
     <script type="text/javascript">
-        $('.fa fa-2x fa-reddit').click(function(e){
+        function resumeOnClick() {
             var type = navigator.appName
             if (type == "Netscape") {
                 var lang = navigator.language
@@ -126,7 +126,7 @@
             } else {
                 window.location.href="./resume_en.html"
             }
-        })
+        }
     </script>
 </html>
 
