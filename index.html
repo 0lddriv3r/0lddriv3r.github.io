@@ -77,7 +77,7 @@
 
                     
                     
-                    <li><a class="fa fa-2x fa-reddit" href="./resume.html"><span class="description">Resume</span></a></li>
+                    <li><a class="fa fa-2x fa-reddit"><span class="description">Resume</span></a></li>
                     
 
                     
@@ -110,5 +110,23 @@
                 </ul>
         </div>
     </body>
+
+    <script type="text/javascript">
+        $('.fa fa-2x fa-reddit').click(function(e){
+            var type = navigator.appName
+            if (type == "Netscape") {
+                var lang = navigator.language
+            } else {
+                var lang = navigator.userLanguage
+            }
+            var lang = lang.substr(0,2)
+
+            if (lang == "zh") {
+                window.location.href="./resume.html"
+            } else {
+                window.location.href="./resume_en.html"
+            }
+        })
+    </script>
 </html>
 

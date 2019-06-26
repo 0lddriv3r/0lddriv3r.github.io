@@ -1,5 +1,3 @@
-
-
 function translate(){
     var value = sessionStorage.getItem("language");
     if(value==="1"){

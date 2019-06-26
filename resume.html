@@ -1,7 +1,6 @@
 --- 
 layout: blank 
 ---
-<button id="translate">中英文切换</button>
 <article class="content">
     <h1 class="myname">卓佳杰 </h1>
     <div class="color-set">
@@ -43,7 +42,7 @@ layout: blank
             </div>
            
             <ul>
-                <li>jsbsim飞行控制</li>
+                <li>JSBSim飞行控制</li>
                 <li>osg绘制</li>
             </ul>                       
         </div>
@@ -58,7 +57,7 @@ layout: blank
         </div>
         <div>
             <div>
-                <p><b>CTDB</b>，后端开发  <span class="year">2018.02-2018.05</span></p>
+                <p><b>CTDB(Compact Terrain Database)</b>，后端开发  <span class="year">2018.02-2018.05</span></p>
             </div>
             <ul>
                 <li>地形数据库设计</li>
@@ -126,7 +125,7 @@ layout: blank
                 <p><b>基于Python的图片爬取工具</b></p>
             </div>
             <ul>
-                <li>基于Python数据采集</li>
+                <li>基于Python图像采集</li>
                 <li>BeautifulSoup</li>
                 <li>链接：<a href="https://github.com/0lddriv3r/BingPhoto">BingPhoto</a></li>
             </ul>
@@ -198,12 +197,12 @@ layout: blank
         <h2><i class="fa fa-star" aria-hidden="true"></i> 获奖情况</h2>
         <hr>
         <div>
-            <li>国防科学技术大学 校学习标兵(四年一度: 2016)</li>
-            <li>国防科学技术大学 院优秀学员(2014 & 2015 & 2016)</li>
+            <li>国防科学技术大学 校学习标兵 (四年一度: 2016)</li>
+            <li>国防科学技术大学 院优秀学员 (2014 & 2015 & 2016)</li>
             <li>国防科学技术大学 优秀毕业论文</li>
-            <li>国际数学建模竞赛(ICM 交叉学科建模比赛) 二等奖(2015 & 2016)</li>
-            <li>全军数学竞赛 一等奖(2015 & 2016)</li>
-            <li>湖南省大学生数学竞赛 一等奖(2015 & 2016)</li>
+            <li>国际数学建模竞赛(ICM 交叉学科建模比赛) 二等奖 (2015 & 2016)</li>
+            <li>全军数学竞赛 一等奖 (2015 & 2016)</li>
+            <li>湖南省大学生数学竞赛 一等奖 (2015 & 2016)</li>
         </div>
     </section>
     <section class="other">
@@ -274,36 +273,6 @@ layout: blank
                 break;
         }
     })
-
-    $("#translate").click(function(){
-        translate();
-    })
-    
-    $(function(){ 
-    var script=document.createElement("script");  
-    script.type="text/javascript";  
-    script.src="https://www.microsoftTranslator.com/ajax/v3/WidgetV3.ashx?siteData=ueOIGRSKkd965FeEGM5JtQ**";  
-    document.getElementsByTagName('head')[0].appendChild(script);  
-
-
-    var value = sessionStorage.getItem("language");
-    document.onreadystatechange = function () {
-        if (document.readyState == 'complete') {
-            if(value==="1"){
-                Microsoft.Translator.Widget.Translate('zh-CHS', 'en', onProgress, onError, onComplete, onRestoreOriginal, 2000);
-            }
-        }
-    }
-    function onProgress(value) {
-    }
-    function onError(error) {
-    }
-    function onComplete() {
-        $("#WidgetFloaterPanels").hide();
-    }
-    function onRestoreOriginal() { 
-    }
-});
 </script>
 
 <style>
