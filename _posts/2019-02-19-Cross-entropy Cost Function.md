@@ -3,7 +3,7 @@ layout: post
 title:  Cross-entropy Cost Function
 date:   2019-02-19 21:43:02
 comments: True
-categories: Others
+categories: Math
 ---
 
 不要望文生义，会耽误很多功夫。这也是碎片化学习饱受诟病的地方：(
