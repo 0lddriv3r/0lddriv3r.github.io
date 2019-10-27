@@ -18,17 +18,21 @@ categories: C++
 ## 极坐标线性插值
 直角坐标系下的线性插值很简单：
 $$ y = y_1 + (x - x_1) * \frac{y_2 - y_1}{x_2 - x_1} $$
+
 但是极坐标下怎么做还没有转过弯来。
 最开始的想法是通过三角函数将极坐标参数转化为直角坐标，进行线性插值后再反转回去，但是后来比较复杂，而且一想不对，那样做插值出来点与点之间不还是直线吗，那直接在直角坐标下做就完了，干嘛还费事地进行两次坐标转换呢。而且线性插值应该指的是对参数的线性化表示，所以，如法炮制：
 $$ r = r_1 + (\theta - \theta_1) * \frac{r_2 - r_1}{\theta_2 - \theta_1} $$
+
 这样出来的点与点之间的图形不是直线，而是一条类似螺旋曲线性质的曲线：
 $$ x = r * cos(\theta), y = r * sin(\theta) $$
+
 $r$与$\theta$是线性增长的关系，但是转换到直角坐标系下，$y$与$x$就不是了。
 
 ## 全局坐标与局部坐标转换
 这个问题是由地球曲率引申出来的。
 在雷达的局部坐标系下，由于地球曲率的影响，在雷达探测范围400km以外的地方大概10km的离地高度计算雷达包络是可以探测到的，但是实际是探测不到的。有一个近似公式：
 $$ h_{target} = \frac{1}{2} * (\sqrt{h_{radar}} + \sqrt{L_{distance}}) $$
+
 其中$h_{target}$为目标的离地高度，$h_{radar}$为雷达的离地高度，$L_{distance}$为目标与雷达距离。
 所以400km外差不多10km高是探测不到的，故应该考虑将探测目标的全局坐标转化为雷达的局部坐标。
 
@@ -89,7 +93,7 @@ bool Radar::Detect( PlanePtr Target )
 }
 ```
 
-# osg绘制
+# 2. osg绘制
 创建三维画笔与基本配置信息：
 
 ```
@@ -779,4 +783,6 @@ void SectorNode::RenderGeometryShader( osg::ref_ptr<osg::Geometry>& geomtry,int 
 ```
 
 最终实现效果如下：
-[osg雷达探测包络](https://www.bilibili.com/video/av73542029")
+<a href="https://www.bilibili.com/video/av73542029">
+    <img src="{{ site.baseurl }}/img/radar_detect_osg.png" width="450px" height="300px" alt="osg雷达探测包络">
+</a>
